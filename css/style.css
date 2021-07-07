@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common  */
+.fl_start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.fl_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fl_end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* common  */
+
+.blue{
+    background-color: #2C3F4F;
+    color: white;
+    height: 100px;
+}
+
+.water{
+    background-color: #1ABC9C;
+    height: 450px;
+}
+
+.white{
+    background-color: white;
+    height: 1450px;
+}
+
+.contact{
+    background-color: white;
+    height: 450px;
+}
+
+.gray{
+    background-color: gray;
+    height: 450px;
+}
+
+/* Header */
+
+
+/* fine Header */
+
+
+/* main  */
+
+
+/* fine main  */
+
+
+/* Footer  */
+
+
+
+/* Fine Footer  */
+
