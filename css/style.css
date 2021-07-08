@@ -4,14 +4,7 @@
     box-sizing: border-box;
 }
 
-/* common  */
-.h-100{
-    height: 100px;
-}
-
-.w-100{
-    width: 100%;
-}
+/* common */
 
 /* structure  */
 
@@ -21,7 +14,7 @@
     height: 100px;
 }
 
-.ms_water{
+.jumbotron{
     background-color: #1ABC9C;
     height: 550px;
     color: white;
@@ -34,12 +27,7 @@
 
 .contact{
     background-color: white;
-    height: 550px;
-}
-
-.bl_gray{
-    background-color: #3A546E;
-    height: 450px;
+    min-height: 550px;
 }
 
 /* Header */
@@ -49,7 +37,7 @@
 }
 .blue .fa-bars{
     font-size: 25px;
-    border: 2px solid white;
+    border: 2px solid #888888;
     padding: 10px;
 }
 .remove{
@@ -58,7 +46,7 @@
 /* fine Header */
 
 /* Jumbotron */
-.ms_water .row img{
+.jumbotron .row img{
     width: 300px;
     height: 300px;
 }
@@ -94,52 +82,99 @@
     vertical-align: middle;
 }
 
-#one, #two, #three, #four, #five, #six{
-    border-radius: 8px;
-    height: 400px;
-    }
-
-#one{
-    background-color: #BB4B63;
-}
-#two{
-    background-color: #1DA5B6;
-}
-#three{
-    background-color: #140F10;
-}
-#four{
-    background-color: #1C83C1;
-}
-#five{
-    background-color: #0F38B5;
-}
-#six{
-    background-color: #CCB2A3;
-}
-
-.ms_portfolio-item{
+.ms_portfolio-item {
+    position: relative;
     height: 300px;
     width: 100%;
     margin-bottom: 30px;
 }
 
-/* ABOUT  */
-
-.about{
-    margin-top: 50px;
+.ms_portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-#ms_white{
-    border: 1px solid white;
+.ms_portfolio-item p{
+    visibility: hidden;
+}
+
+.ms_portfolio-item:hover .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    border-radius: 4px;
+}
+
+.ms_portfolio-item:hover p{
+    visibility: visible;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 150px;
+    color: gray;
+    cursor: pointer;
+}
+
+.ms_portfolio-item:hover {
+
+}
+
+/* ABOUT  */
+.ms_water{
+    background-color: #1ABC9C;
+    color: white;
+}
+
+.ms_water p{
+    font-size: 1.5em;
+}
+
+#my_btn_water {
+    border: 1px solid #1ABC9C;
+    background-color: #1ABC9C;
     color: white;
     font-weight: 600;
     font-size: 1.2em;
 }
 
+/* Contact me  */
+.my_info{
+    font-size: 1.4em;
+}
+
+#my_btn_white {
+    border: 1px solid white;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+}
 /* Footer  */
+.footer-up{
+    background-color: #3A546E;
+    color: white;
+}
 
+.fab{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    font-size: 1.3em;
+    margin: 1%;
+}
+  
+.water{
+    color: #1ABC9C;
+}
 
+.footer-down{
+    font-size: 0.8em;
+}
+  
 /* Fine Footer */
 
 
@@ -154,4 +189,3 @@
     }
 
 }
-/* fine Media query  */
